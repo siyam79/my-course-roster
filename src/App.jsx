@@ -18,20 +18,35 @@ function App() {
 
   const [selectCard, setSelectCard] = useState([])
 
+  const [remeiningHour, setRemeiningHour] = useState(20);
+  const [totalCedit, setTotalCedit] = useState(0)
 
   const handleSelectButton = (card) => {
 
-    // 
-    const isExistTitle = selectCard.find(item => item.title == card.title);
+    const isExistTitle = selectCard.find(item => item.title === card.title);
 
-    if(isExistTitle){
-    //  Toast.error(Error);
+    let count = card.credit;
 
-    toast("Enroll Completed !");
-      // return alert('enroll completed');
-    } else{
+    if (isExistTitle) {
+      toast("Selected Course !");
+    } else {
+      selectCard.forEach((item) => {
+        count = count + item.credit;
+        // console.log(count);
+      
+        
+      });
 
-      setSelectCard([...selectCard, card]);
+
+      let newRemening = 20 - count;
+      if (count > 20) {
+        alert('not')
+      }
+      else {
+        setRemeiningHour(newRemening)
+        setTotalCedit(count)
+        setSelectCard([...selectCard, card]);
+      }
 
     }
 
@@ -49,12 +64,11 @@ function App() {
 
         </div>
         <div className='w-[20%] '>
-          <Index selectCard={selectCard}></Index>
+          <Index selectCard={selectCard} remeiningHour={remeiningHour} totalCedit={totalCedit} ></Index>
         </div>
-      
+
       </div>
 
-{/* toast   */}
       <ToastContainer />
 
     </div>
