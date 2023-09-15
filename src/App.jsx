@@ -40,7 +40,7 @@ function App() {
 
       let newRemening = 20 - count;
       if (count > 20) {
-        alert('not')
+        toast(" Credit Limited Over !");
       }
       else {
         setRemeiningHour(newRemening)
