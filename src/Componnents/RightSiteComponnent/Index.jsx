@@ -6,16 +6,18 @@ const Index = ({ selectCard , remeiningHour , totalCedit }) => {
 
 
     return (
-        <div className="  w-[full] mt-8 bg-[#FFF] shadow-xl  ">
+        <div className="w-[full] mt-10 bg-[#FFF] shadow-xl  ">
             <div>
-                <h3> Credit Hour Remeining {remeiningHour} hr </h3>
-                <h1 className=" text-xl font-bold  m-4 ">Course Name </h1>
+                <h3 className=' font-bold ml-1 text-lg text-[#2F80ED]'> Credit Hour Remeining {remeiningHour}hr </h3>
+                <div className='w-[80%] h-1  text-slate-500  '></div>
+                
+                <h1 className=" text-xl font-bold m-3 ">Course Name </h1>
                 <div className=''>
-                    <ol>
+                    <ol className=' list-decimal ml-4 '>
                         {
 
                            selectCard.map((card, indx) => (
-                            <li key={indx} className='ml-2 font-normal' >{card.title}</li>
+                            <li key={indx} className='ml-2 font-normal text-md mt-2 ' >{card.title}</li>
                         ))
                     
 
@@ -23,7 +25,7 @@ const Index = ({ selectCard , remeiningHour , totalCedit }) => {
                     </ol>
                     
                 </div>
-                <h1> Total Credit Hour : {totalCedit} </h1>
+                <h1 className=' font-semibold ml-2 text-lg mt-4 '> Total Credit Hour : {totalCedit} </h1>
             </div>
             {/* <Toaster position='top-right'></Toaster> */}
         </div>
