@@ -28,7 +28,9 @@ function App() {
     let count = card.credit;
 
     if (isExistTitle) {
-      toast("Selected Course !");
+      toast.warn(" Selected Course !", {
+        position : 'top-center'
+      });
     } else {
       selectCard.forEach((item) => {
         count = count + item.credit;

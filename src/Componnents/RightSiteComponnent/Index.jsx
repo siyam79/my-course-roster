@@ -6,9 +6,10 @@ const Index = ({ selectCard , remeiningHour , totalCedit }) => {
 
 
     return (
-        <div className="w-[full] mt-10 bg-[#FFF] shadow-xl  ">
+        <div className="w-[full] mt-10 bg-[#FFF] shadow-xl rounded-lg  ">
             <div>
-                <h3 className=' font-bold ml-1 text-lg text-[#2F80ED]'> Credit Hour Remeining {remeiningHour}hr </h3>
+                <h3 className=' font-bold ml-1 border-b-2 pb-4  text-lg text-[#2F80ED]'> Credit Hour Remeining {remeiningHour}hr </h3>
+                {/* <hr className='' /> */}
                 <div className='w-[80%] h-1  text-slate-500  '></div>
                 
                 <h1 className=" text-xl font-bold m-3 ">Course Name </h1>
@@ -25,7 +26,7 @@ const Index = ({ selectCard , remeiningHour , totalCedit }) => {
                     </ol>
                     
                 </div>
-                <h1 className=' font-semibold ml-2 text-lg mt-4 '> Total Credit Hour : {totalCedit} </h1>
+                <h1 className=' font-semibold ml-2 text-lg mt-4 border-t-2 pt-4 pb-4 '> Total Credit Hour : {totalCedit} </h1>
             </div>
             {/* <Toaster position='top-right'></Toaster> */}
         </div>
