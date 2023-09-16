@@ -1,20 +1,14 @@
 
 import { useState } from 'react'
 import './App.css'
-// import { Toast } from 'react-hot-toast'
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
-
-
 import Cards from './Componnents/Cards/Cards'
 import Index from './Componnents/RightSiteComponnent/Index'
 
+
 function App() {
-
-
-  // add too Select button  
 
   const [selectCard, setSelectCard] = useState([])
 
@@ -29,14 +23,13 @@ function App() {
 
     if (isExistTitle) {
       toast.warn(" Selected Course !", {
-        position : 'top-center'
+        position: 'top-center'
       });
     } else {
       selectCard.forEach((item) => {
         count = count + item.credit;
         // console.log(count);
-      
-        
+
       });
 
 
@@ -53,8 +46,6 @@ function App() {
     }
 
   };
-  // console.log(selectCard);
-
 
   return (
     <div className=' w-[98%] mx-auto '>

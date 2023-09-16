@@ -4,14 +4,14 @@ import dollarSing1 from '../../assets/dollarSing1.png'
 
 import PropTypes from 'prop-types';
 
-const Card = ({ card , handleSelectButton  }) => {
+const Card = ({ card, handleSelectButton }) => {
     const { image, title, description, price, credit } = card;
     return (
         <div className="">
 
             <div className="card w-full h-[440px] bg-[#FFF] shadow-xl rounded-lg ">
                 <figure className="px-1">
-                    <img src={image} alt="" className="rounded-md  w-[280px]  mx-auto h-48 pt-2 "/>
+                    <img src={image} alt="" className="rounded-md  w-[280px]  mx-auto h-48 pt-2 " />
                 </figure>
                 <div className="card-body items-center ">
                     <h2 className="card-title text-start font-bold text-xl ml-2 mt-4  ">{title}</h2>
@@ -28,22 +28,17 @@ const Card = ({ card , handleSelectButton  }) => {
                         </div>
                     </div>
                     <div className="card-actions text-center ">
-                        <button onClick={()=> handleSelectButton(card)} className="btn btn-primary w-[90%] mt-1 p-2 rounded-md border-[#2F80ED] bg-[#2F80ED] font-semibold text-xl text-white ">Select</button>
-
-                        {/* <Toaster position='top-right'></Toaster> */}
+                        <button onClick={() => handleSelectButton(card)} className="btn btn-primary w-[90%] mt-1 p-2 rounded-md border-[#2F80ED] bg-[#2F80ED] font-semibold text-xl text-white ">Select</button>
                     </div>
                 </div>
             </div>
-
-          
-
         </div>
     );
 };
 
 Card.propTypes = {
-    card : PropTypes.object,
-    handleSelectButton:PropTypes.func
+    card: PropTypes.object,
+    handleSelectButton: PropTypes.func
 }
 
 export default Card;
