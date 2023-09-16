@@ -1,6 +1,5 @@
 
 import PropTypes from 'prop-types';
-// import { Toaster } from 'react-hot-toast';
 
 const Index = ({ selectCard, remeiningHour, totalCedit }) => {
 
