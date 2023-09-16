@@ -11,7 +11,14 @@
 
  # Secend Question : 
 
- ## first Creating a fake JSON data Then Load Ind The data through (useEffect). fetch data  Then Respons Promice Use  and  JSON  data Convert ,,... Then  Creat a (UseState) Of My data Up ( map) Use Of  data set It there.. after That useState  a set of  data ..  Acessing By Disstructure . after That a by setteing ONE in this way MakeIng  card Where There was (Picture) (title) (Description) (Price) And (Credit) ..  After That Press The ( EvenHandler ) Button   henler   is setteing and  Modifying the kilns .. One Is setteing Another useState Of data That data Doing WhatEver Takes to make Modifay In this way .. The Work of the Projects is Wax Absorption doing .
+ ## first Creating a fake JSON data Then Load Ind The data through (useEffect). 
+ ## fetch data  Then Respons Promice Use  and  JSON  data Convert ,,... Then  Creat a 
+ ## (UseState) Of My data Up ( map) Use Of  data set It there.. after That useState  a set of  
+ ## data ..  Acessing By Disstructure . after That a by setteing ONE in this way MakeIng  card 
+ ## Where There was (Picture) (title) (Description) (Price) And (Credit) ..  After That Press 
+ ## The ( EvenHandler ) Button   henler   is setteing and  Modifying the kilns .. One Is 
+ ## setteing Another useState Of data That data Doing WhatEver Takes to make Modifay In this 
+ ## way .. The Work of the Projects is Wax Absorption doing .
 
 # What We Well Uses In this React Projects !! 
 
